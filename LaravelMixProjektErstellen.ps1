@@ -121,11 +121,6 @@ $jsonContent.devDependencies = @{
     "sass-loader" = "^12.1.0"
 }
 
-# Update der dependencies-Abschnitt
-$jsonContent.dependencies = @{
-    "jquery-ui" = "^1.13.2"
-}
-
 # Schreibe die aktualisierte JSON-Datei zurück
 $jsonContent | ConvertTo-Json | Set-Content package.json
 
